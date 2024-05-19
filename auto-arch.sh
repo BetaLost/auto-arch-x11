@@ -512,7 +512,7 @@ cd \$HOME/.config/dmenu
 
 # Download dotfiles
 cd \$HOME
-git clone https://github.com/BetaLost/dotfiles.git
+git clone https://github.com/BetaLost/dotfiles-x11.git dotfiles
 
 # Configure dwm scripts
 mv \$HOME/dotfiles/.xsession \$HOME/
@@ -556,7 +556,7 @@ sudo mv \$HOME/dotfiles/neofetch \$HOME/.config/
 sudo mv \$HOME/dotfiles/wallpapers \$HOME/.config/
 
 # Install Arabic font
-wget https://github.com/BetaLost/auto-arch/raw/main/khebrat-musamim.zip
+wget https://github.com/BetaLost/auto-arch-x11/raw/main/khebrat-musamim.zip
 unzip khebrat-musamim.zip
 rm khebrat-musamim.zip
 sudo mkdir -p /usr/share/fonts/TTF
@@ -566,7 +566,7 @@ sudo mv \$HOME/dotfiles/fonts.conf /etc/fonts/
 sudo cp /etc/fonts/fonts.conf /etc/fonts/local.conf
 
 # Install GRUB theme
-wget https://github.com/BetaLost/auto-arch/raw/main/arch.tar
+wget https://github.com/BetaLost/auto-arch-x11/raw/main/arch.tar
 sudo mkdir -p /boot/grub/themes
 sudo mkdir /boot/grub/themes/arch
 sudo mv arch.tar /boot/grub/themes/arch/
@@ -578,7 +578,7 @@ sudo sed -i "s/#GRUB_DISABLE_OS_PROBER=false/GRUB_DISABLE_OS_PROBER=false/g" /et
 sudo grub-mkconfig -o /boot/grub/grub.cfg
 
 # Install cursor
-wget https://github.com/BetaLost/auto-arch/raw/main/macOSBigSur.tar.gz
+wget https://github.com/BetaLost/auto-arch-x11/raw/main/macOSBigSur.tar.gz
 tar -xf macOSBigSur.tar.gz
 rm macOSBigSur.tar.gz
 sudo mv macOSBigSur /usr/share/icons/
